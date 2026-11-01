@@ -1,6 +1,13 @@
+# Jupyter
 .ipynb_checkpoints/
+
+# Python
 __pycache__/
-*.pyc
-*.pyo
-.env
+*.py[cod]
+
+# Virtual environments
 venv/
+.env/
+
+# Environment variables
+.env

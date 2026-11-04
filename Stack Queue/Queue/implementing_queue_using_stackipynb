@@ -1,0 +1,91 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "eebbb5cf-0f59-4ec6-b8cd-a272a60b402e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class queue:\n",
+    "    def __init__(self):        \n",
+    "        self.st1 = []\n",
+    "        self.st2 = []\n",
+    "\n",
+    "    def push(self,x):\n",
+    "        while self.st1:\n",
+    "            self.st2.append(self.st1.pop())\n",
+    "        self.st1.append(x)\n",
+    "        while self.st2:\n",
+    "            self.st1.append(self.st2.pop())\n",
+    "\n",
+    "    def display(self):\n",
+    "        print(self.st1)\n",
+    "        \n",
+    "\n",
+    "        \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "6dbf83f8-ffe3-4ef1-a4f5-28f741617cee",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "q = queue()\n",
+    "q.push(44)\n",
+    "q.push(45)\n",
+    "q.push(46)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "230b6bc0-0236-407e-93f6-7aeaf19d9a73",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[46, 45, 44]\n"
+     ]
+    }
+   ],
+   "source": [
+    "q.display()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8e7d388d-7b65-4206-9f81-374a32af4aeb",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:anaconda3]",
+   "language": "python",
+   "name": "conda-env-anaconda3-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

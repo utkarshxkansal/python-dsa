@@ -11,7 +11,7 @@ A hands-on record of my journey through **Data Structures and Algorithms using P
 | Linked Lists | Singly, doubly, and circular linked lists |
 | Stacks | Array/list-based implementations and related problems |
 | Queues | Linear queue, fixed-capacity array queue, and upcoming variants |
-| Trees | Binary tree fundamentals and traversals |
+| Trees | Binary tree fundamentals and traversals |\n| Strings | Python string fundamentals, indexing, slicing, traversal, operations, and built-in methods |
 
 This table describes the learning areas in the repository; individual implementations may still be in progress.
 
@@ -61,7 +61,7 @@ For each data structure, aim to document:
 - [x] Begin binary-tree practice
 - [ ] Complete array-based and linked-list-based stack/queue variants
 - [ ] Circular queue and deque
-- [ ] Recursion and backtracking
+- [x] Begin string fundamentals and common Python string operations\n- [ ] Character encoding, frequency counting, and string DSA patterns\n- [ ] Recursion and backtracking
 - [ ] Searching and sorting
 - [ ] Heaps, hash tables, graphs, and dynamic programming
 - [ ] Add problem explanations and complexity notes as topics mature

@@ -1,91 +1,68 @@
-# Python DSA — Learning & Implementation
+# Python DSA
 
-A hands-on record of my journey through **Data Structures and Algorithms using Python**. This repository contains implementations, practice work, and notes created while learning how data structures behave internally—not just how to use built-in shortcuts.
+A practical, continuously updated record of my **Data Structures and Algorithms journey in Python**. This repository contains my implementations, Jupyter practice notebooks, and problem solutions as I work through core DSA concepts and Striver's learning roadmap.
 
-> Current focus: understanding each structure, implementing its core operations, testing edge cases, and gradually solving problems with it.
+## Repository map
 
-## Topics
-
-| Topic | Current coverage |
+| Section | What you'll find |
 |---|---|
-| Linked Lists | Singly, doubly, and circular linked lists |
-| Stacks | Array/list-based implementations and related problems |
-| Queues | Linear queue, fixed-capacity array queue, and upcoming variants |
-| Trees | Binary tree fundamentals and traversals |\n| Strings | Python string fundamentals, indexing, slicing, traversal, operations, and built-in methods |
+| [Linked Lists](linked_lists/) | Singly, doubly, and circular linked-list operations |
+| [Stacks & Queues](stacks_and_queues/) | Stack and queue implementations, including array/list and linked-list approaches |
+| [Trees](trees/) | Binary-tree construction, traversals, and problem solutions |
+| [Strings](strings/) | String fundamentals, operations, and built-in methods |
+| [Striver DSA](striver_dsa/) | Topic-wise practice for basics, hashing, and sorting |
 
-This table describes the learning areas in the repository; individual implementations may still be in progress.
+## Current binary-tree practice
 
-## Repository layout
+- [Tree introduction](trees/binary_trees/introduction.ipynb)
+- [Preorder traversal](trees/binary_trees/preorder.ipynb)
+- [Inorder traversal](trees/binary_trees/inorder.ipynb)
+- [Level-order traversal — LeetCode 102](trees/binary_trees/level_order_traversal.py)
+- [All three traversals using one stack](trees/binary_trees/iterative_all_traversals.py)
+- [Maximum depth — LeetCode 104](trees/binary_trees/maximum_depth.py)
+- [Same tree — LeetCode 100](trees/binary_trees/same_tree.py)
 
-```text
-python-dsa/
-├── Linked_List/
-│   ├── Doubly_ll/
-│   ├── Singly_Linked_List/
-│   └── circular_ll/
-├── Stack Queue/
-│   ├── Queue/
-│   └── Stack/
-├── Trees/
-│   └── Binary Trees/
-├── .gitignore
-└── README.md
+## How this repository is organised
+
+- Topic folders keep related implementations together.
+- Jupyter notebooks preserve hands-on experiments and step-by-step learning.
+- Standalone `.py` files contain reusable or problem-platform-style solutions.
+- Each major topic has its own README with a quick index.
+- File names use lowercase `snake_case` for consistency.
+
+## Suggested learning workflow
+
+1. Understand the concept and its invariants.
+2. Implement the operation without relying on shortcuts.
+3. Trace the code with a small example.
+4. Test empty inputs, one-element cases, and boundary conditions.
+5. Record time and space complexity.
+6. Solve related problems and revisit mistakes.
+
+## Setup
+
+```bash
+git clone https://github.com/utkarshxkansal/python-dsa.git
+cd python-dsa
+python -m pip install jupyter
+jupyter notebook
 ```
 
-Folder names are kept as they currently exist so existing notebook and file paths are not broken. They can be renamed in a dedicated cleanup when all references are updated together.
+Open any `.ipynb` notebook in Jupyter Notebook, JupyterLab, or VS Code. Standalone Python files can be run with:
 
-## How I study each topic
+```bash
+python path/to/file.py
+```
 
-1. Understand the purpose and invariants of the data structure.
-2. Implement the structure and its operations from scratch.
-3. Trace pointer/index changes with small examples.
-4. Test normal cases, empty structures, boundary conditions, and invalid operations.
-5. Analyse time and space complexity.
-6. Practise problems that use the structure.
+## Progress roadmap
 
-## Implementation checklist
+- [x] Linked-list fundamentals and operations
+- [x] Stack and queue implementation practice
+- [x] Binary-tree fundamentals and traversal practice
+- [x] String fundamentals and common operations
+- [x] Striver basics, hashing, and sorting practice
+- [ ] Balanced binary tree and further binary-tree problems
+- [ ] Recursion and backtracking
+- [ ] Binary search, heaps, graphs, and dynamic programming
 
-For each data structure, aim to document:
-
-- [ ] Core operations and their behaviour
-- [ ] Edge cases (empty, one element, and boundary conditions)
-- [ ] Time and space complexity
-- [ ] Example usage and expected output
-- [ ] Problems solved using the concept
-
-## Learning roadmap
-
-- [x] Singly, doubly, and circular linked-list practice
-- [x] Begin stack implementations
-- [x] Begin queue implementations
-- [x] Begin binary-tree practice
-- [ ] Complete array-based and linked-list-based stack/queue variants
-- [ ] Circular queue and deque
-- [x] Begin string fundamentals and common Python string operations\n- [ ] Character encoding, frequency counting, and string DSA patterns\n- [ ] Recursion and backtracking
-- [ ] Searching and sorting
-- [ ] Heaps, hash tables, graphs, and dynamic programming
-- [ ] Add problem explanations and complexity notes as topics mature
-
-## Tools
-
-- Python
-- Jupyter Notebook
-- Git and GitHub
-
-## Running the notebooks
-
-1. Clone this repository.
-2. Install Python and Jupyter Notebook.
-3. Open the relevant `.ipynb` file in Jupyter or VS Code.
-4. Run cells in order and check the examples yourself.
-
-## Repository principles
-
-- Prefer clear, understandable implementations over clever one-liners.
-- Keep experiments and unfinished work clearly labelled.
-- Explain non-obvious logic and important edge cases.
-- Never commit credentials, private data, or local environment folders.
-
----
-
-*Learning by implementing, debugging, testing, and improving—one concept at a time.*
+*This is a learning repository: coverage grows as concepts are studied, implemented, tested, and documented.*

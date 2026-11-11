@@ -12,6 +12,8 @@ This folder contains binary-tree construction, traversal and problem-solving pra
 - `maximum_depth.py` — recursive maximum depth / height of a binary tree (LeetCode 104).
 - `same_tree.py` — recursive structural and value comparison (LeetCode 100).
 
+- `level_order_traversal.py` — breadth-first level order traversal using a queue (LeetCode 102).
+
 ## Conventions
 - LeetCode-style solutions use `root.val`, `root.left`, and `root.right`.
 - The notebooks retain the earlier practice convention using `node.data`.

@@ -1,43 +1,37 @@
 # Python DSA
 
-A practical, continuously updated record of my **Data Structures and Algorithms journey in Python**. This repository contains my implementations, Jupyter practice notebooks, and problem solutions as I work through core DSA concepts and Striver's learning roadmap.
+A practical, continuously updated record of my **Data Structures and Algorithms journey in Python**. This repository contains implementations, Jupyter practice notebooks, and problem-solving notes as I work through core DSA concepts and Striver's learning roadmap.
 
 ## Repository map
 
 | Section | What you'll find |
 |---|---|
 | [Linked Lists](linked_lists/) | Singly, doubly, and circular linked-list operations |
-| [Stacks & Queues](stacks_and_queues/) | Stack and queue implementations, including array/list and linked-list approaches |
-| [Trees](trees/) | Binary-tree construction, traversals, and problem solutions |
+| [Stacks & Queues](stacks_and_queues/) | Stack and queue implementations |
+| [Trees](trees/) | Binary-tree construction, traversals, and problems |
 | [Strings](strings/) | String fundamentals, operations, and built-in methods |
-| [Striver DSA](striver_dsa/) | Topic-wise practice for basics, hashing, and sorting |
+| [Striver DSA](striver_dsa/) | Basics, hashing, and sorting practice |
+| [LeetCode](leetcode/) | Individual problem practice notebooks |
 
-## Current binary-tree practice
+## Binary-tree practice
 
 - [Tree introduction](trees/binary_trees/introduction.ipynb)
 - [Preorder traversal](trees/binary_trees/preorder.ipynb)
 - [Inorder traversal](trees/binary_trees/inorder.ipynb)
-- [Level-order traversal — LeetCode 102](trees/binary_trees/level_order_traversal.py)
+- [Level-order practice](trees/binary_trees/level_order_practice.ipynb)
+- [Preorder, inorder and postorder practice](trees/binary_trees/preorder_inorder_postorder_practice.ipynb)
+- [Level-order solution — LeetCode 102](trees/binary_trees/level_order_traversal.py)
 - [All three traversals using one stack](trees/binary_trees/iterative_all_traversals.py)
 - [Maximum depth — LeetCode 104](trees/binary_trees/maximum_depth.py)
 - [Same tree — LeetCode 100](trees/binary_trees/same_tree.py)
 
-## How this repository is organised
+## Repository conventions
 
-- Topic folders keep related implementations together.
-- Jupyter notebooks preserve hands-on experiments and step-by-step learning.
-- Standalone `.py` files contain reusable or problem-platform-style solutions.
-- Each major topic has its own README with a quick index.
-- File names use lowercase `snake_case` for consistency.
-
-## Suggested learning workflow
-
-1. Understand the concept and its invariants.
-2. Implement the operation without relying on shortcuts.
-3. Trace the code with a small example.
-4. Test empty inputs, one-element cases, and boundary conditions.
-5. Record time and space complexity.
-6. Solve related problems and revisit mistakes.
+- Keep related work together by topic.
+- Use lowercase `snake_case` for folders and filenames.
+- Keep exploratory work in Jupyter notebooks.
+- Use standalone `.py` files for reusable or platform-style solutions.
+- Add a short explanation and time/space complexity when appropriate.
 
 ## Setup
 
@@ -48,19 +42,16 @@ python -m pip install jupyter
 jupyter notebook
 ```
 
-Open any `.ipynb` notebook in Jupyter Notebook, JupyterLab, or VS Code. Standalone Python files can be run with:
+Open `.ipynb` files in Jupyter Notebook, JupyterLab, or VS Code. Run standalone Python files with `python path/to/file.py`.
 
-```bash
-python path/to/file.py
-```
-
-## Progress roadmap
+## Learning roadmap
 
 - [x] Linked-list fundamentals and operations
 - [x] Stack and queue implementation practice
 - [x] Binary-tree fundamentals and traversal practice
 - [x] String fundamentals and common operations
 - [x] Striver basics, hashing, and sorting practice
+- [x] LeetCode problem practice started
 - [ ] Balanced binary tree and further binary-tree problems
 - [ ] Recursion and backtracking
 - [ ] Binary search, heaps, graphs, and dynamic programming
